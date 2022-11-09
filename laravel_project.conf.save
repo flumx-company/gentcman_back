@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+   ServerName http://91.228.236.253:49158/
+   ServerAdmin webmaster
+   DocumentRoot /var/www/html/example/public
+
+   <Directory /var/www/html/example>
+       AllowOverride All
+   </Directory>
+   ErrorLog ${APACHE_LOG_DIR}/error.log
+   CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
